@@ -303,7 +303,7 @@
       "Properties" : {
         "InstanceType" : "t2.micro",
         "KeyName"  : "Rahul_COI_Test",
-		"Tags" : { "Name": "VPCSimpleTest" },
+		"Tags" : { "Key": Name, "Value": OIM_SimpleVPC },
         "ImageId"  : "ami-6869aa05",
         "NetworkInterfaces" : [{
           "GroupSet"                 : [{ "Ref" : "EC2SecurityGroup" }],
