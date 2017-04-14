@@ -1,9 +1,9 @@
 {
   "Parameters" : {
-    "DBName" : "TestWordPressDB",
-    "DBPassword" : "TestDBRootPassword",
-    "DBRootPassword" : "TestDBRootPassword",
-    "DBUser" : "TestDBuser",    
+    "DBName" : "wordpress",
+    "DBPassword" : "Welcome!@#4",
+    "DBRootPassword" : "Welcome123$",
+    "DBUser" : "rahulna",    
     "KeyName" : "Rahul_COI_Test"
   }
 }
