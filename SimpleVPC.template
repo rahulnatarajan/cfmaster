@@ -301,8 +301,9 @@
       "Type" : "AWS::EC2::Instance",
       "DependsOn" : "GatewayToInternet",
       "Properties" : {
-        "InstanceType" : "t2.small",
+        "InstanceType" : "t2.micro",
         "KeyName"  : "Rahul_COI_Test",
+		"Tags" : { "Name": "VPCSimpleTest" },
         "ImageId"  : "ami-6869aa05",
         "NetworkInterfaces" : [{
           "GroupSet"                 : [{ "Ref" : "EC2SecurityGroup" }],
@@ -323,7 +324,7 @@
           "IpProtocol" : "tcp",
           "FromPort" : "22",  
           "ToPort" : "22",
-          "CidrIp" : "192.168.0.0/16"
+          "CidrIp" : "0.0.0.0/0"
         } ]
       }
     }
