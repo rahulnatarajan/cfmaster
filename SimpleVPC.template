@@ -1,7 +1,7 @@
 {
   "AWSTemplateFormatVersion" : "2010-09-09",
 
-  "Description" : "AWS CloudFormation Sample Template VPC_with_PublicIPs_And_DNS: Sample template showing how to create a VPC with DNS and Public IPs enabled. You will be billed for the AWS resources used if you create a stack from this template.",
+  "Description" : "Simple VPC Creation Template",
   "Mappings" : {
     "SubnetConfig" : {
       "VPC"     : { "CIDR" : "192.168.0.0/16" },
@@ -301,7 +301,7 @@
       "Type" : "AWS::EC2::Instance",
       "DependsOn" : "GatewayToInternet",
       "Properties" : {
-        "InstanceType" : "t2.micro",
+        "InstanceType" : "t2.small",
         "KeyName"  : "Rahul_COI_Test",
         "ImageId"  : "ami-6869aa05",
         "NetworkInterfaces" : [{
@@ -323,7 +323,7 @@
           "IpProtocol" : "tcp",
           "FromPort" : "22",  
           "ToPort" : "22",
-          "CidrIp" : "0.0.0.0/0"
+          "CidrIp" : "192.168.0.0/16"
         } ]
       }
     }
