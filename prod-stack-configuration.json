@@ -1,9 +1,0 @@
-{
-  "Parameters" : {
-    "DBName" : "wordpress",
-    "DBPassword" : "Welcome!@#4",
-    "DBRootPassword" : "Welcome123$",
-    "DBUser" : "rahulna",    
-    "KeyName" : "Rahul_COI_Test"
-  }
-}
